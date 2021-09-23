@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SecurityMan</string>
+    <string name="enter_your_id">Enter your ID :</string>
+    <string name="input_value">Input Value</string>
+    <string name="permission">permission</string>
+    <string name="shared_preferences">Shared Preferences</string>
+    <string name="database">Database</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="description">Enter A Description</string>
+    <string name="save">Save</string>
+</resources>
