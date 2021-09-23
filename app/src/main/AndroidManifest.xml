@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SecurityMan">
         <activity
-            android:name=".ui.databases.sqlite.SQliteActivity"
+            android:name=".ui.databases.sqlite.Sqliteactivity"
             android:exported="true" />
         <activity
             android:name=".ui.databases.DatabaseActivity"

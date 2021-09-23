@@ -8,4 +8,6 @@
     <string name="enter_title">Enter Title</string>
     <string name="description">Enter A Description</string>
     <string name="save">Save</string>
+    <string name="DONE">DONE</string>
+    <string name="failed">Failed</string>
 </resources>

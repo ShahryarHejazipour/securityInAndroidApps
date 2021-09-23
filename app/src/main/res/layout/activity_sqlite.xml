@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.databases.sqlite.SQliteActivity">
+    tools:context=".ui.databases.sqlite.Sqliteactivity">
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edt_title"

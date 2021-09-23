@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.tispunshahryar960103.securityman.R;
-import com.tispunshahryar960103.securityman.ui.databases.sqlite.SQliteActivity;
+import com.tispunshahryar960103.securityman.ui.databases.sqlite.Sqliteactivity;
 
 public class DatabaseActivity extends AppCompatActivity {
 
@@ -24,7 +24,7 @@ public class DatabaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent(getApplicationContext(), SQliteActivity.class);
+                Intent intent=new Intent(getApplicationContext(), Sqliteactivity.class);
                 startActivity(intent);
             }
         });
