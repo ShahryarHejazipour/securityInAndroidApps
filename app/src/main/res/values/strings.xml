@@ -19,4 +19,5 @@
     <string name="enter_your_password">Enter your Password</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
+    <string name="sql_cipher">SQL Cipher</string>
 </resources>

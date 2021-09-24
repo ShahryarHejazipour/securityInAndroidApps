@@ -25,11 +25,21 @@
         android:text="@string/sql_injection"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sql_cipher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="@string/sql_cipher"/>
+
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="25dp"
         android:text="@string/secure_sqlite"/>
+
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"

@@ -47,4 +47,8 @@ dependencies {
     // For Identity Credential APIs
     implementation "androidx.security:security-identity-credential:1.0.0-alpha01"
 
+    //SQL-Cipher
+    implementation 'net.zetetic:android-database-sqlcipher:4.4.3@aar'
+    implementation "androidx.sqlite:sqlite:2.1.0"
+
 }
