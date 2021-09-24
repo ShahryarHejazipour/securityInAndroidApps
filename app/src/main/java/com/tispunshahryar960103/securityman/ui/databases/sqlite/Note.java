@@ -1,4 +1,4 @@
-package com.tispunshahryar960103.securityman.ui.databases.model;
+package com.tispunshahryar960103.securityman.ui.databases.sqlite;
 
 public class Note {
 

@@ -10,4 +10,13 @@
     <string name="save">Save</string>
     <string name="DONE">DONE</string>
     <string name="failed">Failed</string>
+    <string name="sqlite">SQlite</string>
+    <string name="secure_sqlite">secure SQlite</string>
+    <string name="realm">realm</string>
+    <string name="room">ROOM</string>
+    <string name="sql_injection">SQL Injection</string>
+    <string name="enter_a_username">Enter a Username</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>

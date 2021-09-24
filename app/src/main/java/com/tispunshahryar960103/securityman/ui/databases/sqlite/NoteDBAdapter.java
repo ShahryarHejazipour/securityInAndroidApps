@@ -7,10 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import androidx.annotation.Nullable;
 
-import com.tispunshahryar960103.securityman.ui.databases.model.Note;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class NoteDBAdapter extends NoteDatabase {

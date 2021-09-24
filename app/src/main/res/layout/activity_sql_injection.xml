@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.databases.injection.SqlInjectionActivity">
+
+     <androidx.cardview.widget.CardView
+         app:cardCornerRadius="@dimen/elevation_8"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="@dimen/margin_16"
+         android:elevation="@dimen/elevation_8">
+
+         <LinearLayout
+             android:padding="@dimen/margin_16"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <androidx.appcompat.widget.AppCompatEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/edt_username"
+                 android:hint="@string/enter_a_username"/>
+
+
+             <androidx.appcompat.widget.AppCompatEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/edt_password"
+
+                 android:hint="@string/enter_your_password"/>
+
+             <androidx.appcompat.widget.AppCompatButton
+                 android:id="@+id/btn_login"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/login"/>
+
+             <androidx.appcompat.widget.AppCompatButton
+                 android:id="@+id/btn_register"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/register"/>
+
+
+
+
+
+         </LinearLayout>
+
+
+     </androidx.cardview.widget.CardView>
+
+</LinearLayout>

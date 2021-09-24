@@ -11,7 +11,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.tispunshahryar960103.securityman.R;
-import com.tispunshahryar960103.securityman.ui.databases.model.Note;
 
 import java.util.List;
 
