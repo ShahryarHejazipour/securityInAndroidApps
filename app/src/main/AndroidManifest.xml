@@ -8,12 +8,16 @@
     <uses-permission android:name="android.permission.READ_SMS" />
 
     <application
+        android:name=".AppConfig"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SecurityMan">
+        <activity
+            android:name=".ui.databases.realm.RealmActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.databases.sqlCipher.SqlCipherActivity"
             android:exported="true" />
