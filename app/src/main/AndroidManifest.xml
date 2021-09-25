@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SecurityMan">
         <activity
+            android:name=".ui.databases.room.RoomActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.databases.realm.RealmActivity"
             android:exported="true" />
         <activity
