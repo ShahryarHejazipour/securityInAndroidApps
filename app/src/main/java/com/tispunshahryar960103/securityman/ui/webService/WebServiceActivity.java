@@ -10,12 +10,13 @@ import android.view.View;
 import com.tispunshahryar960103.securityman.R;
 import com.tispunshahryar960103.securityman.api.ApiClient;
 import com.tispunshahryar960103.securityman.ui.webService.notSecure.NotSecureActivity;
+import com.tispunshahryar960103.securityman.ui.webService.secure.SecureActivity;
 
 import retrofit2.Retrofit;
 
 public class WebServiceActivity extends AppCompatActivity {
 
-    AppCompatButton btn_normal;
+    AppCompatButton btn_normal,btn_encrypt;
 
 
     @Override
@@ -24,6 +25,7 @@ public class WebServiceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_web_service);
 
         btn_normal=findViewById(R.id.btn_normal);
+        btn_encrypt=findViewById(R.id.btn_encrypt);
 
 
 
@@ -35,6 +37,17 @@ public class WebServiceActivity extends AppCompatActivity {
 
                 startActivity(intent);
 
+
+            }
+        });
+
+        btn_encrypt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(getApplicationContext(), SecureActivity.class);
+
+                startActivity(intent);
 
             }
         });

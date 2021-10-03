@@ -1,0 +1,26 @@
+انواع روش های رمزنگاری اطلاعات :
+
+1- DES Symmetric Encryption Algorithm
+2- 3DES Symmetric Encryption Algorithm
+3- AES Symmetric Encryption Algorithm
+4- RSA Symmetric Encryption Algorithm
+5- ECC Symmetric Encryption Algorithm
+6- MD5
+
+----------------------------------------------------
+
+در این درس از کتابخانه ی زیر که برای وب سرویس های بر پایه ی PHP است برای آموزش استفاده می شود :
+
+https://github.com/serpro/Android-PHP-Encrypt-Decrypt
+
+این کتابخانه دارای یک فایل است که باید در سمت سرور یا همان سمت PHP نوشته شود :
+
+https://github.com/serpro/Android-PHP-Encrypt-Decrypt/blob/master/PHP/MCrypt.php
+
+نکته : دو متغیر زیر که در فایل PHP بالا تعریف می شوند باید عینا در سمت اندروید ( جاوا یا کاتلین ) هم همین مقادیر را داشته باشند :
+
+ private $iv = 'fedcba9876543210'; #Same as in JAVA
+    private $key = '0123456789abcdef'; #Same as in JAVA
+
+
+
