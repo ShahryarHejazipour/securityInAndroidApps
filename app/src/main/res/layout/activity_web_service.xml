@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/pdding_32"
+    tools:context=".ui.webService.WebServiceActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/not_secure_request"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/encrypted_data_request"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ssl_pinning"/>
+
+
+
+
+
+
+</LinearLayout>

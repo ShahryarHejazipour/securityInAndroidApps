@@ -3,43 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_input"
             android:text="@string/input_value"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_permission"
             android:text="@string/permission"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_shared_perf"
             android:text="@string/shared_preferences"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_database"
             android:text="@string/database"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             />
 
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_web_service"
+            android:text="@string/web_service"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+
+
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
 
 
     </LinearLayout>
+
 
 
 

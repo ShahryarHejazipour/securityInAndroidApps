@@ -20,4 +20,10 @@
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="sql_cipher">SQL Cipher</string>
+    <string name="web_service">Web Service</string>
+    <string name="not_secure_request">Not Secure Request</string>
+    <string name="encrypted_data_request">Encrypted Data Request</string>
+    <string name="ssl_pinning">SSL Pinning</string>
+
+
 </resources>
