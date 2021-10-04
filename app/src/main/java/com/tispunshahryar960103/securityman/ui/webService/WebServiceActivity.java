@@ -11,12 +11,13 @@ import com.tispunshahryar960103.securityman.R;
 import com.tispunshahryar960103.securityman.api.ApiClient;
 import com.tispunshahryar960103.securityman.ui.webService.notSecure.NotSecureActivity;
 import com.tispunshahryar960103.securityman.ui.webService.secure.SecureActivity;
+import com.tispunshahryar960103.securityman.ui.webService.sslPinning.SSLPinningActivity;
 
 import retrofit2.Retrofit;
 
 public class WebServiceActivity extends AppCompatActivity {
 
-    AppCompatButton btn_normal,btn_encrypt;
+    AppCompatButton btn_normal,btn_encrypt,btn_pinning;
 
 
     @Override
@@ -26,6 +27,7 @@ public class WebServiceActivity extends AppCompatActivity {
 
         btn_normal=findViewById(R.id.btn_normal);
         btn_encrypt=findViewById(R.id.btn_encrypt);
+        btn_pinning=findViewById(R.id.btn_pinning);
 
 
 
@@ -49,6 +51,13 @@ public class WebServiceActivity extends AppCompatActivity {
 
                 startActivity(intent);
 
+            }
+        });
+
+        btn_pinning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), SSLPinningActivity.class));
             }
         });
 

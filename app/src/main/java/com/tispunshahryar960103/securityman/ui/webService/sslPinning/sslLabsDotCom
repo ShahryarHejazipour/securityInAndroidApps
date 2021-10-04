@@ -1,0 +1,11 @@
+
+1- در مسیر https://www.ssllabs.com/ssltest در قسمت Hostname که برای سرچ است
+در این قسمت مقدار پاراکتر اول متد add که همان pattern مورد نظر هست را وارد می کنیم
+ که در این مثال مقدار  api.github.com  است
+و دکمه ی Submit را می زنیم تا اطلاعات Https آن دامنه را به ما بدهد.
+نتیجه این است که همه ی Certificate های صادر شذه برای این Pattern را با تمام مشخصات و کیلد ها به ما می دهد.
+
+2- برای انتخاب هرکدام از این Certificate ها کافی اس در قسمت Subject آن مقدار Pin SHA256 را کپی کرده و به عنوان
+Pin به متد add بدهیم.
+
+Pin SHA256: k2v657xBsOVe1PQRwOsHsw3bsGT2VzIqz5K+59sNQws=

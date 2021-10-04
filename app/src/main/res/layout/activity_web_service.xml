@@ -22,6 +22,7 @@
         android:text="@string/encrypted_data_request"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pinning"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ssl_pinning"/>
