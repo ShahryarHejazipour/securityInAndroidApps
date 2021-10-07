@@ -6,6 +6,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.tispunshahryar960103.securityman.ui.webService.WebServiceActivity;
 import com.tispunshahryar960103.securityman.ui.databases.DatabaseActivity;
@@ -17,6 +18,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     AppCompatButton btn_input,btn_permission,btn_shared_perf,btn_database,btn_web_service;
+
+    static {
+
+        System.loadLibrary("ndksample");
+
+
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +83,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        String message=stringFromJNI();
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+
+
 
     }
+
+
+    public native String stringFromJNI();
 }

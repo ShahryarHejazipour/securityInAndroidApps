@@ -13,6 +13,13 @@ android {
         versionCode 1
         versionName "1.0"
 
+        externalNativeBuild{
+
+            cmake {
+                cppFlags ''
+            }
+        }
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -25,6 +32,19 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild{
+
+       cmake{
+
+           //برای مشخص کردن مسیر قرارگیری فایلهای ++C
+           //ورودی تابع file همان مسیر دایرکتوری cpp است و یک فایل با نام CMakeLists.txt در آن می سازیم
+           path file('src/main/cpp/CMakeLists.txt')
+           version '3.10.2'
+
+
+       }
     }
 
 
