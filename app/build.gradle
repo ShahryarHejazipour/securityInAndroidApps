@@ -51,6 +51,14 @@ android {
     realm {
         syncEnabled = true
     }
+
+
+
+    buildTypes.each {
+
+        it.buildConfigField 'String' , 'serverUrl' , serverUrl
+    }
+
 }
 
 dependencies {
