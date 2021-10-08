@@ -26,6 +26,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ssl_pinning"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_laravel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/laravel"/>
 
 
 

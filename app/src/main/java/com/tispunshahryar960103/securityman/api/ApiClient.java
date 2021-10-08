@@ -5,7 +5,9 @@ import android.util.Base64;
 import com.tispunshahryar960103.securityman.BuildConfig;
 
 import java.io.UnsupportedEncodingException;
+import java.util.concurrent.TimeUnit;
 
+import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -16,20 +18,27 @@ public class ApiClient {
     }
 
 
-    //public static final String BASE_URL="http://api.androidsupport.ir/";
-   //public static final String BASE_URL= BuildConfig.serverUrl;
-   //public static final String BASE_URL= getUrl();
-   public static final String BASE_URL= getSecureBaseUrl();
+    public static final String BASE_URL = "http://api.androidsupport.ir/";
+    //public static final String BASE_URL= BuildConfig.serverUrl;
+    //public static final String BASE_URL= getUrl();
+    // public static final String BASE_URL= getSecureBaseUrl();
 
-    private static Retrofit retrofit=null;
+    private static Retrofit retrofit = null;
 
-    public static Retrofit getClient(){
+    public static Retrofit getClient() {
 
 
-        if (retrofit==null){
+        if (retrofit == null) {
+
+            //for increasing the time-out in retrofit
+            OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                    .readTimeout(60, TimeUnit.SECONDS)
+                    .writeTimeout(60, TimeUnit.SECONDS).build();
+
 
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
+                    .client(okHttpClient) // this method has set for increasing time-out in retrofit
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
 
@@ -50,29 +59,21 @@ public class ApiClient {
     مانند "https://gdgsdhguk.com/" را برگرداند تا اگر کسی فایل apk را decompile کرد نتواند به رشته های ما
     دشترسی داشته باشد.
      */
-    public static String getSecureBaseUrl(){
+    public static String getSecureBaseUrl() {
 
-        String mUrl=getUrl();
+        String mUrl = getUrl();
 
         try {
-            String text = new String(Base64.decode(mUrl,Base64.DEFAULT),"UTF-8");
+            String text = new String(Base64.decode(mUrl, Base64.DEFAULT), "UTF-8");
             return text;
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
 
-        mUrl="https://gdgsdhguk.com/";
+        mUrl = "https://google.com/";
         return mUrl;
 
     }
-
-
-
-
-
-
-
-
 
 
 }

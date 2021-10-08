@@ -19,6 +19,9 @@
         android:theme="@style/Theme.SecurityMan"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.webService.laravel.LaravelActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.webService.sslPinning.SSLPinningActivity"
             android:exported="true" />
         <activity
