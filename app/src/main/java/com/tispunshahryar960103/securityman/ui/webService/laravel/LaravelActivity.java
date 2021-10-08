@@ -28,8 +28,14 @@ import retrofit2.Response;
 
 public class LaravelActivity extends AppCompatActivity {
 
-    AppCompatEditText edt_name, edt_email, edt_password, edt_repassword, edt_email_login, edt_password_login;
-    AppCompatButton btn_register, btn_login;
+    AppCompatEditText edt_name
+            , edt_email
+            , edt_password
+            , edt_repassword
+            , edt_email_login
+            , edt_password_login
+            ;
+    AppCompatButton btn_register, btn_login,btn_user_data;
     IService iService;
 
     //For saving the token
@@ -49,6 +55,7 @@ public class LaravelActivity extends AppCompatActivity {
         btn_login = findViewById(R.id.btn_login);
         edt_email_login = findViewById(R.id.edt_email_login);
         edt_password_login = findViewById(R.id.edt_password_login);
+        btn_user_data = findViewById(R.id.btn_user_data);
 
         //For saving the token
         myEncryptedSharedPreferences=new MyEncryptedSharedPreferences(this);
@@ -132,6 +139,29 @@ public class LaravelActivity extends AppCompatActivity {
 
            }
        });
+
+        btn_user_data.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String auth="Bearer "+myEncryptedSharedPreferences.getToken();
+                iService.user(auth).enqueue(new Callback<ResponseBody>() {
+                    @Override
+                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                        Log.e("", "");
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+                        Log.e("", "");
+                    }
+                });
+
+
+
+
+            }
+        });
 
 
     }
