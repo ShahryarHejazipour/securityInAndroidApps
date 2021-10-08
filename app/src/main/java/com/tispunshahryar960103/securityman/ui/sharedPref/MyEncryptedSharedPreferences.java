@@ -103,4 +103,15 @@ public class MyEncryptedSharedPreferences {
         return sharedPreferences.getString("Level","");
     }
 
+    public void saveToken(String token){
+
+        editor.putString("token",token);
+        editor.commit();
+
+    }
+
+    public String getToken(){
+        return sharedPreferences.getString("token","");
+    }
+
 }
