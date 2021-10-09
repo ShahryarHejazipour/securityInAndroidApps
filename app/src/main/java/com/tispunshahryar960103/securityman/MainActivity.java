@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.tispunshahryar960103.securityman.ui.ipc.IPCActivity;
 import com.tispunshahryar960103.securityman.ui.webService.WebServiceActivity;
 import com.tispunshahryar960103.securityman.ui.databases.DatabaseActivity;
 import com.tispunshahryar960103.securityman.ui.input.InputValueActivity;
@@ -17,7 +18,7 @@ import com.tispunshahryar960103.securityman.ui.sharedPref.SharedPreferencesActiv
 public class MainActivity extends AppCompatActivity {
 
 
-    AppCompatButton btn_input,btn_permission,btn_shared_perf,btn_database,btn_web_service;
+    AppCompatButton btn_input,btn_permission,btn_shared_perf,btn_database,btn_web_service,btn_ipc;
 
     static {
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btn_shared_perf=findViewById(R.id.btn_shared_perf);
         btn_database=findViewById(R.id.btn_database);
         btn_web_service=findViewById(R.id.btn_web_service);
+        btn_ipc=findViewById(R.id.btn_ipc);
 
         btn_permission.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +84,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_ipc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), IPCActivity.class));
+            }
+        });
+
+
+
 
         String message=stringFromJNI();
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();

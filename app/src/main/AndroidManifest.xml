@@ -19,6 +19,15 @@
         android:theme="@style/Theme.SecurityMan"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.ipc.IPCActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ipc.binders.BindersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ipc.intents.IntentActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.webService.laravel.LaravelActivity"
             android:exported="true" />
         <activity
