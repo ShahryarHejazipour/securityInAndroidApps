@@ -9,4 +9,4 @@ In this project we have Described how to set more security in our android apps w
 7- How to manage Permissions
 8- How to Encrypt SharedPreferences
 9- SSLPinning and Securing the WebServices
-10 How to manage Sniffing
+10- How to manage Sniffing
