@@ -1,6 +1,6 @@
 # security In Android Apps
 In this project we have Described how to set more security in our android apps with below methodes :
-1- Methods for decompile the apk s
+#### Methods for decompile the apk s
 2- Using android NDK for Encrypting the Strings in Apps
 3- How to Encrypting Databases in Android apps like Room, Realm, Sqlite, SqlCipher
 4- How to manage SqlInjection
