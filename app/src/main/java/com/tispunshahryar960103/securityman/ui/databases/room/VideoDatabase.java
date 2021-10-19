@@ -13,6 +13,7 @@ import net.sqlcipher.database.SupportFactory;
 public abstract class VideoDatabase extends RoomDatabase {
 
 
+
     public abstract IDAO idao();
 
     private static VideoDatabase instance = null;
